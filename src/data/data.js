@@ -1,5 +1,5 @@
 export default {
-  links: [
+  linksHeader: [
     "Home",
     "About Us",
     "Service",

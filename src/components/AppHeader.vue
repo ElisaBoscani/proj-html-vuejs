@@ -18,7 +18,7 @@ export default {
 
 <template>
   <header>
-    <nav class="navbar navbar-dark fixed-top container pt-4">
+    <nav class="navbar navbar-dark container pt-4">
       <div class="container-fluid">
         <img src="../assets/img/avadabarbers-stickylogo-x1.png" alt="" />
         <div>
@@ -35,7 +35,7 @@ export default {
           </button>
         </div>
         <div
-          class="offcanvas offcanvas-end text-bg-dark w-100"
+          class="offcanvas z-1 offcanvas-end text-bg-dark w-100"
           tabindex="-1"
           id="offcanvasDarkNavbar"
           aria-labelledby="offcanvasDarkNavbarLabel"
@@ -49,14 +49,63 @@ export default {
             ></button>
           </div>
           <div class="offcanvas-body text-center">
-            <AppInfo :item="item" v-for="item in data.links" />
-            <!--   <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li> -->
+            <AppInfo :item="item" v-for="item in data.linksHeader" />
           </div>
         </div>
       </div>
     </nav>
+    <section class="d-flex">
+      <div class="container d-flex justify-content-evenly align-items-center">
+        <div class="d-flex flex-column">
+          <h1 class="">Barber Shop</h1>
+          <span class="fs-6 py-3">The Pinnacle Mate Grooming</span>
+          <div class="pt-4">
+            <a href="#" class="px-4"> Learn more</a>
+          </div>
+        </div>
+        <div>
+          <img
+            src="../assets/img/avadabarbers_hero_focalmirror-400x550.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="d-flex flex-column gap-2 pt-4 square_offcanvas">
+        <div
+          class="bg-white d-flex flex-column justify-content-center align-items-center border rounded icon"
+        >
+          <div
+            class="bg-secondary d-flex align-items-center justify-content-center p-2"
+          >
+            <font-awesome-icon
+              icon="fa-brands fa-atlassian"
+              flip="horizontal"
+              size="xs"
+              style="color: #ffffff"
+            />
+          </div>
+          <span class="icon_sale fw-bold">Demos</span>
+        </div>
+        <div
+          class="bg-white p-2 d-flex flex-column align-items-center border rounded"
+        >
+          <span class="position-relative text-success fw-bold fs-4">
+            39
+            <span
+              class="position-absolute icon_sold translate-middle badge rounded-pill text-success fw-bold"
+            >
+              $
+            </span>
+          </span>
+          <span class="icon_sale fw-bolder">On Sale</span>
+          <!-- <div class="icon d-flex align-items-center justify-content-center">
+            <span class="text-success fw-bold">$</span>
+            <span class="text-success fw-bold fs-3">39</span>
+          </div>
+          <span class="fs-6 fw-bolder">On Sale</span> -->
+        </div>
+      </div>
+    </section>
   </header>
 </template>
 

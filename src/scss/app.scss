@@ -1,2 +1,9 @@
 @use "/node_modules/bootstrap/scss/bootstrap.scss";
 @use "./variables" as *;
+
+header {
+  background-image: url(../assets/img/avadabarbers-homepage-hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 425px;
+}

@@ -9,6 +9,7 @@ body {
 a {
   text-decoration: none;
   color: $barb-shp-text-btn;
+  font-weight: bold;
 }
 
 header {
@@ -63,6 +64,7 @@ main {
     background-position: top;
     background-size: cover;
     padding: 70px;
+    padding-bottom: 110px;
   }
   span {
     color: $barb-shp-text-btn;
@@ -74,12 +76,25 @@ main {
     color: $barb-shop-text;
   }
   a {
-    border: 1px solid $barb-shp-text-btn;
-    padding: 13px;
+    border: 2px solid $barb-shp-text-btn;
+    padding: 11px;
     text-transform: uppercase;
+    font-size: 12px;
   }
-  /*   .service {
-    background-image: url(../assets/img/triangle.svg);
-    height: 200px;
-  } */
+  .service {
+    padding-bottom: 80px;
+
+    img {
+      width: 70px;
+      height: 90px;
+    }
+    h3 {
+      font-size: 25px;
+      font-family: "Abril Fatface", cursive;
+      color: $barb-shp-text-btn;
+    }
+  }
+  .products {
+    background-color: black;
+  }
 }

@@ -16,7 +16,12 @@ export default {
     height="100"
     viewBox="0 0 100 100"
     preserveAspectRatio="none"
-    style="fill: #ffffff; padding: 27; margin: -73"
+    style="
+      fill: #ffffff;
+      padding: 27;
+      margin: -73;
+      width: -webkit-fill-available;
+    "
   >
     <path d="M0 100 L50 2 L100 100 Z"></path>
   </svg>

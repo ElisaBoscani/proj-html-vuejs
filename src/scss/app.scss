@@ -11,7 +11,9 @@ a {
   color: $barb-shp-text-btn;
   font-weight: bold;
 }
-
+.font_family {
+  font-family: "Abril Fatface", cursive;
+}
 header {
   background-image: url(../assets/img/avadabarbers-homepage-hero-bg.jpg);
   background-position: center;
@@ -71,13 +73,13 @@ main {
     font-size: 12px;
   }
   h2 {
-    font-size: 45px;
+    font-size: 35px;
     font-family: "Abril Fatface", cursive;
     color: $barb-shop-text;
   }
   a {
     border: 2px solid $barb-shp-text-btn;
-    padding: 11px;
+    padding: 6px;
     text-transform: uppercase;
     font-size: 12px;
   }
@@ -95,6 +97,34 @@ main {
     }
   }
   .products {
-    background-color: black;
+    background-image: url(../assets/img/avadabarbers-reviewsbackground.jpg);
+    background-size: cover;
+  }
+  .shaving {
+    :first-child div {
+      border-top: 2px solid $barb-shp-text-btn;
+      margin-top: -20px;
+    }
+    .shaving_img {
+      background-image: url(../assets/img/avadabarbers-cta-background.jpg);
+      background-size: cover;
+      width: fit-content;
+    }
+
+    p,
+    span {
+      font-size: 10px;
+    }
+  }
+  .reviews {
+    .square {
+      width: 90px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+    }
+    p {
+      color: $barb-shop-text;
+      font-weight: lighter;
+    }
   }
 }

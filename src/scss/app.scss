@@ -54,6 +54,32 @@ header {
   .square_offcanvas {
     position: absolute;
     z-index: 900;
-    left: 85%;
+    left: 93%;
   }
+}
+main {
+  .pro_barbers {
+    background-image: url(../assets/img/avadabarbers-about-introbackground.jpg);
+    background-position: top;
+    background-size: cover;
+    padding: 70px;
+  }
+  span {
+    color: $barb-shp-text-btn;
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 45px;
+    font-family: "Abril Fatface", cursive;
+    color: $barb-shop-text;
+  }
+  a {
+    border: 1px solid $barb-shp-text-btn;
+    padding: 13px;
+    text-transform: uppercase;
+  }
+  /*   .service {
+    background-image: url(../assets/img/triangle.svg);
+    height: 200px;
+  } */
 }

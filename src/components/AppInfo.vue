@@ -11,9 +11,14 @@ export default {
 </script>
 
 <template>
-  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">{{ item }}</a>
-    </li>
-  </ul>
+  <li class="">
+    <a
+      class="border-0 text-white fs-3 text-capitalize fw-medium lh-lg active"
+      aria-current="page"
+      href="#"
+      >{{ item }}</a
+    >
+  </li>
 </template>
+
+<style lang="scss" scoped></style>

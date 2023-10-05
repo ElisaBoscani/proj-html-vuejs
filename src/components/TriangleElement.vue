@@ -18,7 +18,7 @@ export default {
     preserveAspectRatio="none"
     style="
       fill: #ffffff;
-      padding: 27;
+      padding: 25;
       margin: -73;
       width: -webkit-fill-available;
     "

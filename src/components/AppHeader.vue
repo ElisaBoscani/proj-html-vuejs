@@ -51,6 +51,34 @@ export default {
           <div class="offcanvas-body text-center">
             <AppInfo :item="item" v-for="item in data.linksHeader" />
           </div>
+          <div class="d-flex flex-column gap-2 pt-4 square_offcanvas">
+            <div
+              class="bg-white d-flex flex-column justify-content-center align-items-center border rounded icon pt-1"
+            >
+              <div
+                class="bg-secondary border rounded d-flex align-items-center justify-content-center p-2"
+              >
+                <font-awesome-icon
+                  icon="fa-brands fa-atlassian"
+                  flip="horizontal"
+                  size="xs"
+                  style="color: #ffffff"
+                />
+              </div>
+              <span class="icon_sale fw-bold pt-2">Prebuilts</span>
+            </div>
+            <div
+              class="bg-white p-2 pt-3 d-flex flex-column align-items-center border rounded icon"
+            >
+              <font-awesome-icon
+                icon="cart-shopping"
+                flip="horizontal"
+                size="xl"
+                style="color: #b0b0b0"
+              />
+              <span class="icon_sale fw-bolder pt-2">Buy Now</span>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -58,7 +86,7 @@ export default {
       <div class="container d-flex justify-content-evenly align-items-center">
         <div class="d-flex flex-column">
           <h1 class="">Barber Shop</h1>
-          <span class="fs-6 py-3">The Pinnacle Mate Grooming</span>
+          <p class="py-3">The Pinnacle Mate Grooming</p>
           <div class="pt-4">
             <a href="#" class="px-4"> Learn more</a>
           </div>
@@ -70,12 +98,12 @@ export default {
           />
         </div>
       </div>
-      <div class="d-flex flex-column gap-2 pt-4 square_offcanvas">
+      <div class="d-flex flex-column gap-2 pt-4">
         <div
           class="bg-white d-flex flex-column justify-content-center align-items-center border rounded icon"
         >
           <div
-            class="bg-secondary d-flex align-items-center justify-content-center p-2"
+            class="bg-secondary pt-1 border rounded d-flex align-items-center justify-content-center p-2"
           >
             <font-awesome-icon
               icon="fa-brands fa-atlassian"
@@ -84,7 +112,7 @@ export default {
               style="color: #ffffff"
             />
           </div>
-          <span class="icon_sale fw-bold">Demos</span>
+          <span class="icon_sale fw-bold pt-2">Demos</span>
         </div>
         <div
           class="bg-white p-2 d-flex flex-column align-items-center border rounded"
@@ -98,11 +126,6 @@ export default {
             </span>
           </span>
           <span class="icon_sale fw-bolder">On Sale</span>
-          <!-- <div class="icon d-flex align-items-center justify-content-center">
-            <span class="text-success fw-bold">$</span>
-            <span class="text-success fw-bold fs-3">39</span>
-          </div>
-          <span class="fs-6 fw-bolder">On Sale</span> -->
         </div>
       </div>
     </section>

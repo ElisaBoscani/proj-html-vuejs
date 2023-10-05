@@ -10,7 +10,7 @@ export default {
   <section class="pt-4 service">
     <div class="d-flex flex-column align-items-center">
       <div class="d-flex flex-column align-items-center pb-5">
-        <span class="text-uppercase fw-bold">Mens Grooming</span>
+        <span>Mens Grooming</span>
         <h2>Services</h2>
       </div>
 

@@ -3,17 +3,24 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import AppInfo from "./AppInfo.vue";
 import data from "../data/data.js";
 import OffcanvasHeader from "./OffcanvasHeader.vue";
+
 export default {
   name: "AppHeader",
   data() {
     return {
       data,
+      OffcanvasVisible: false,
     };
   },
   components: {
     FontAwesomeIcon,
     AppInfo,
     OffcanvasHeader,
+  },
+  methods: {
+    showOf() {
+      this.OffcanvasVisible = !this.OffcanvasVisible;
+    },
   },
 };
 </script>
@@ -25,18 +32,9 @@ export default {
         <img src="../assets/img/avadabarbers-stickylogo-x1.png" alt="" />
         <div>
           <font-awesome-icon icon="cart-shopping" style="color: #ffffff" />
-          <button
-            class="navbar-toggler border-0"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+
+          <OffcanvasHeader></OffcanvasHeader>
         </div>
-        <OffcanvasHeader></OffcanvasHeader>
       </div>
     </nav>
     <section class="d-flex">
@@ -45,7 +43,7 @@ export default {
           <h1 class="">Barber Shop</h1>
           <p class="py-3">The Pinnacle Mate Grooming</p>
           <div class="pt-4">
-            <a href="#" class="px-4"> Learn more</a>
+            <a href="#" class="px-4 hover_bnt"> Learn more</a>
           </div>
         </div>
         <div>
@@ -89,4 +87,4 @@ export default {
   </header>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped></style>

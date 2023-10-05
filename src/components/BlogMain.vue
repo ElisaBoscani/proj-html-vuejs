@@ -52,7 +52,7 @@ export default {
         </div>
       </div>
     </div>
-    <div class="d-flex justify-content-center p-2">
+    <div class="d-flex justify-content-center p-2 pb-5">
       <a href="#">Read more our blog</a>
     </div>
   </section>

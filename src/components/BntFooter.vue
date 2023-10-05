@@ -10,7 +10,7 @@ export default {
   <div class="col">
     <img :src="card.img" alt="" />
     <div>
-      <a href="#">{{ card.text }}</a>
+      <a href="#" class="hover_bnt">{{ card.text }}</a>
     </div>
   </div>
 </template>

@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import "../src/scss/app.scss";
 /* import * as bootstrap from "bootstrap"; */
-import "../node_modules/bootstrap/dist/js/bootstrap.js";
+/* import "../node_modules/bootstrap/dist/js/bootstrap.js"; */
 import App from "./App.vue";
 
 /* import the fontawesome core */

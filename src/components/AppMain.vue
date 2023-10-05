@@ -5,6 +5,7 @@ import ServiceMain from "./ServiceMain.vue";
 import ProductMain from "./ProductMain.vue";
 import ReviewsMain from "./ReviewsMain.vue";
 import BlogMain from "./BlogMain.vue";
+
 export default {
   name: "AppMain",
   data() {

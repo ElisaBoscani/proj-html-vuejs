@@ -5,9 +5,7 @@ export default {
     item: String,
   },
   data() {
-    return {
-      contactor: 0,
-    };
+    return {};
   },
 };
 </script>

@@ -13,9 +13,22 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 /* import specific icons */
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
-import { faAtlassian } from "@fortawesome/free-brands-svg-icons";
+import {
+  faAtlassian,
+  faFacebookF,
+  faTwitter,
+  faYoutube,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 /* add icons to the library */
-library.add(faAtlassian, faCartShopping);
+library.add(
+  faAtlassian,
+  faFacebookF,
+  faTwitter,
+  faYoutube,
+  faInstagram,
+  faCartShopping
+);
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
